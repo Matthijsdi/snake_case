@@ -8,4 +8,6 @@
 
 @section('content')
     <p>You are logged in!</p>
+
+    <a href="{{ url('/wedstrijdinfo') }}">pls</a>
 @stop
