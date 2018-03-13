@@ -94,19 +94,19 @@ return [
         ],
         [
             'text'        => 'Home',
-            'url'         => 'admin/home',
+            'url'         => 'home',
             'icon'        => 'home',
             'label_color' => 'success',
         ],
         [
             'text'        => 'Competitie',
-            'url'         => 'admin/competitie',
+            'url'         => 'wedstrijdinfo',
             'icon'        => 'signal',
             'label_color' => 'success',
         ],
         [
             'text'        => 'Vereniging',
-            'url'         => 'admin/vereniging',
+            'url'         => 'vereniging',
             'icon'        => 'users',
             'label_color' => 'success',
         ],
