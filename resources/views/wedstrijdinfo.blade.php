@@ -23,18 +23,23 @@
         <form role="form">
                 <div class="box-body">
                     <div class="form-group">
-                    <label for="matchDate">Datum wedstrijd</label>
-                    <input type="date" class="form-control" id="matchDate" placeholder="voer de wedstrijddatum in">
+                        <label for="wedstrijd_id">Wedstrijd ID</label>
+                        <input type="id" class="form-control" id="wedstrijd_id" placeholder="voer de wedstrijdnummer in">
                     </div>
 
                     <div class="form-group">
-                    <label for="teamNameA">Naam team A</label>
-                    <input type="name" class="form-control" id="teamNameA" placeholder="voer de teamnaam van team A in">
+                        <label for="datum">Datum wedstrijd</label>
+                        <input type="date" class="form-control" id="datum" placeholder="voer de datum van de wedstrijd in">
                     </div>
 
                     <div class="form-group">
-                    <label for="teamNameB">Naam team B</label>
-                    <input type="name" class="form-control" id="teamNameB" placeholder="voer de teamnaam van team B in">
+                        <label for="team_thuis">Naam thuis team</label>
+                        <input type="name" class="form-control" id="team_thuis" placeholder="voer de teamnaam van het thuis team in">
+                    </div>
+
+                    <div class="form-group">
+                    <label for="team_uit">Naam uit team</label>
+                    <input type="name" class="form-control" id="team_uit" placeholder="voer de teamnaam van het uit team in">
                     </div>
                     
                 </div>
