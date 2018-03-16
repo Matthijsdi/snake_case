@@ -19,6 +19,8 @@
         </ul>
     </div>
         
+    
+    <!-- WORDT VERPLAATST -->
     <div id="form">    
         <form role="form">
                 <div class="box-body">
