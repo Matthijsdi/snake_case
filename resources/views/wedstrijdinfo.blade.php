@@ -22,24 +22,28 @@
     <div id="form">    
         <form role="form">
                 <div class="box-body">
+                    <!-- balk om het ID van de wedstrijd in te vullen -->
                     <div class="form-group">
                         <label for="wedstrijd_id">Wedstrijd ID</label>
-                        <input type="id" class="form-control" id="wedstrijd_id" placeholder="voer de wedstrijdnummer in">
+                        <input type="id" class="form-control" id="wedstrijd_id" placeholder="voer het wedstrijdnummer in">
                     </div>
 
+                    <!-- balk om de datum van de wedstrijd in te vullen -->
                     <div class="form-group">
                         <label for="datum">Datum wedstrijd</label>
                         <input type="date" class="form-control" id="datum" placeholder="voer de datum van de wedstrijd in">
                     </div>
 
+                    <!-- balk om de naam van het thuis team in te vullen -->
                     <div class="form-group">
                         <label for="team_thuis">Naam thuis team</label>
                         <input type="name" class="form-control" id="team_thuis" placeholder="voer de teamnaam van het thuis team in">
                     </div>
 
+                    <!-- balk om de naam van het uit team in te vullen -->
                     <div class="form-group">
-                    <label for="team_uit">Naam uit team</label>
-                    <input type="name" class="form-control" id="team_uit" placeholder="voer de teamnaam van het uit team in">
+                        <label for="team_uit">Naam uit team</label>
+                        <input type="name" class="form-control" id="team_uit" placeholder="voer de teamnaam van het uit team in">
                     </div>
                     
                 </div>
