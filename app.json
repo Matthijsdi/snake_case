@@ -1,5 +1,5 @@
 {
-	"name": "Snake_case",
+	"name": "snake_case",
 	"scripts": {
 		"postdeploy": "php artisan migrate"
 	},
