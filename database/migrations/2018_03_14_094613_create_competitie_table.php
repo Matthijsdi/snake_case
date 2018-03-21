@@ -13,10 +13,11 @@ class CreateCompetitieTable extends Migration
      */
     public function up()
     {
-        Schema::create('competitie', function (Blueprint $table) {
-            $table->increments('competitie_id');
-            $table->string('klasse');
+        Schema::create('competities', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('klasse_afkorting');
+            $table->string('klasse');
+            $table->timestamps();
         });
     }
 
@@ -27,6 +28,6 @@ class CreateCompetitieTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('competitie');
+        Schema::dropIfExists('competities');
     }
 }
