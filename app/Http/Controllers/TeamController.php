@@ -16,9 +16,8 @@ class TeamController extends Controller
     public function index()
     {
         $team = Team::all();
-
-        return View::make('team.index')
-            ->with('team',$team);
+        return view('teams.index')
+            ->with('teams', $team);
     }
 
     /**
@@ -28,7 +27,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        //
+        return view('teams.create');
     }
 
     /**
@@ -45,12 +44,13 @@ class TeamController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Team $team)
     {
-        //
+        return view('teams.show')
+            ->with('team', $team);
     }
 
     /**

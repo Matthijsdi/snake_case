@@ -13,12 +13,11 @@ class CreateTeamTable extends Migration
      */
     public function up()
     {
-        Schema::create('team', function (Blueprint $table) {
-            $table->increments('team_id');
-            $table->int('competitie_id');
+        Schema::create('teams', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('competitie_id');
             $table->string('naam');
-            $table->string('klasse');
-            $table->string('klasse_afkorting');
+            $table->timestamps();
         });
     }
 
@@ -29,6 +28,6 @@ class CreateTeamTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('team');
+        Schema::dropIfExists('teams');
     }
 }

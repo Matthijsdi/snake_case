@@ -19,6 +19,7 @@ Auth::routes();
 
 Route::resources([
     'home' => 'HomeController',
+    'teams' => 'TeamController',
     'wedstrijdinfo' => 'WedstrijdInfoController',
     'vereniging' => 'VerenigingController'
     ]);
