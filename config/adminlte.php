@@ -35,7 +35,7 @@ return [
     | ligth variant: blue-light, purple-light, purple-light, etc.
     |
     */
-    'skin' => 'blue',
+    'skin' => 'red',
     /*
     |--------------------------------------------------------------------------
     | Layout
@@ -46,7 +46,7 @@ return [
     | removes the sidebar and places your menu in the top navbar
     |
     */
-    'layout' => null,
+    'layout' => 'top-nav',
     /*
     |--------------------------------------------------------------------------
     | Collapse Sidebar
