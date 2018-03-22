@@ -10,7 +10,7 @@ return [
     | You can optionally also specify a title prefix and/or postfix.
     |
     */
-    'title' => 'snake_case',
+    'title' => 'MBV Volley',
     'title_prefix' => '',
     'title_postfix' => '',
     /*
@@ -35,7 +35,7 @@ return [
     | ligth variant: blue-light, purple-light, purple-light, etc.
     |
     */
-    'skin' => 'blue',
+    'skin' => 'red',
     /*
     |--------------------------------------------------------------------------
     | Layout

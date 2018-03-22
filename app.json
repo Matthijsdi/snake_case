@@ -6,6 +6,12 @@
 	"env": {
 		"APP_ENV": {
 			"required": true
+<<<<<<< HEAD
+=======
+			},
+		"APP_ENV": {
+			"required": true
+>>>>>>> origin/master
 		},
 		"DB_CONNECTION": {
 			"required": true
@@ -24,4 +30,8 @@
 		"url": "heroku/php"
 		}
 	]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
