@@ -18,10 +18,8 @@
             <li><a href="#">Team 4</a></li>
         </ul>
     </div>
-        
-    
     <!-- WORDT VERPLAATST -->
-    <div id="form">    
+    <div id="form">
         <form role="form">
                 <div class="box-body">
                     <!-- balk om het ID van de wedstrijd in te vullen -->
@@ -47,7 +45,7 @@
                         <label for="team_uit">Naam uit team</label>
                         <input type="name" class="form-control" id="team_uit" placeholder="voer de teamnaam van het uit team in">
                     </div>
-                    
+
                 </div>
                 <!-- /.box-body -->
 

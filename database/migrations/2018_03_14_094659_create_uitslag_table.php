@@ -14,7 +14,7 @@ class CreateUitslagTable extends Migration
     public function up()
     {
         Schema::create('uitslag', function (Blueprint $table) {
-            $table->increments('wedstrijd_id');
+            $table->increments('id');
             $table->string('uitslag_thuis');
             $table->string('uitslag_uit');
             $table->string('set1_thuis');

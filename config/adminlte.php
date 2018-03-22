@@ -46,7 +46,7 @@ return [
     | removes the sidebar and places your menu in the top navbar
     |
     */
-    'layout' => null,
+    'layout' => 'top-nav',
     /*
     |--------------------------------------------------------------------------
     | Collapse Sidebar

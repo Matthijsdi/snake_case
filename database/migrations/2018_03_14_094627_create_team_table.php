@@ -14,8 +14,8 @@ class CreateTeamTable extends Migration
     public function up()
     {
         Schema::create('team', function (Blueprint $table) {
-            $table->increments('team_id');
-            $table->int('competitie_id');
+            $table->increments('id');
+            $table->integer('competitie_id');
             $table->string('naam');
             $table->string('klasse');
             $table->string('klasse_afkorting');
