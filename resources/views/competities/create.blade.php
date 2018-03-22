@@ -8,16 +8,17 @@
 
 @section('content')
     <div id="form">
-        <form role="form">
             <div class="box-body">
-                <div class="form-group">
-                    <label for="klasse">Klasse Afkorting</label>
-                    <input type="name" class="form-control" id="klasseAfkortingInput" placeholder="Voer de klasse afkorting in...">
-                    <label for="klasse">Klasse</label>
-                    <input type="name" class="form-control" id="klasseInput" placeholder="Voer de klasse in...">
-                    <a href="{{ route('competities.store') }}" type="button" class="btn btn-primary">Voeg toe</a>
-                </div>
+                <form method="POST" action="/competities">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <div class="form-group">
+                        <label for="klasse">Klasse Afkorting</label>
+                        <textarea name="klasse_afkorting" type="name" class="form-control" id="klasse_afkorting" placeholder="Voer de klasse afkorting in..."></textarea>
+                        <label for="klasse">Klasse</label>
+                        <textarea name="klasse" type="name" class="form-control" id="klasse" placeholder="Voer de klasse in..."></textarea>
+                        <button type="submit" class="btn btn-primary">Voeg toe</button>
+                    </div>
+                </form>
             </div>
-        </form>
     </div>
 @stop

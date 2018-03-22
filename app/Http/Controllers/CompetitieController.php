@@ -39,7 +39,15 @@ class CompetitieController extends Controller
      */
     public function store(Request $request)
     {
-        
+         // een nieuw Competitie moodel maken
+        $c = Competitie::make();
+        // model vullen met data uit request
+        $c->klasse = $request['klasse'];
+        $c->klasse_afkorting = $request['klasse_afkorting'];
+        // model opslaan in database
+        $c->save();
+        // redirect naar competities pagina
+        return redirect()->route('competities.index');
     }
 
     /**
