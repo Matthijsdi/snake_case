@@ -17,6 +17,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::resources([
+    'home' => 'HomeController',
+    'competities' => 'CompetitieController',
+    'wedstrijdinfo' => 'WedstrijdInfoController',
+    'vereniging' => 'VerenigingController'
+    ]);
 
-Route::get('/wedstrijdinfo', 'WedstrijdInfoController@index')->name('wedstrijdinfo');

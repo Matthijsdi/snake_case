@@ -10,7 +10,7 @@ return [
     | You can optionally also specify a title prefix and/or postfix.
     |
     */
-    'title' => 'snake_case',
+    'title' => 'MBV Volley',
     'title_prefix' => '',
     'title_postfix' => '',
     /*
@@ -46,7 +46,7 @@ return [
     | removes the sidebar and places your menu in the top navbar
     |
     */
-    'layout' => null,
+    'layout' => 'top-nav',
     /*
     |--------------------------------------------------------------------------
     | Collapse Sidebar
