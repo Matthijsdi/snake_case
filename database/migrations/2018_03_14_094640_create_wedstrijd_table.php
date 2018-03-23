@@ -14,7 +14,7 @@ class CreateWedstrijdTable extends Migration
     public function up()
     {
         Schema::create('wedstrijd', function (Blueprint $table) {
-            $table->increments('wedstrijd_id');
+            $table->increments('id');
             $table->string('team_thuis');
             $table->string('team_uit');
             $table->string('team_scheidsrechter');
