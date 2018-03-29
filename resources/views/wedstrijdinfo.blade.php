@@ -18,7 +18,7 @@
             <li><a href="#">Team 4</a></li>
         </ul>
     </div>
-    <!-- WORDT VERPLAATST -->
+    <!-- WORDT VERPLAATST NAAR ADMIN PAGINA -->
     <div id="form">
         <form role="form">
                 <div class="box-body">
