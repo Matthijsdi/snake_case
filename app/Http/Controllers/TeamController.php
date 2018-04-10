@@ -16,9 +16,8 @@ class TeamController extends Controller
     public function index()
     {
         $team = Team::all();
-
-        return View::make('team.index')
-            ->with('team',$team);
+        return view('teams.index')
+            ->with('teams', $team);
     }
 
     /**
@@ -28,7 +27,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        //
+        return view('teams.create');
     }
 
     /**
@@ -39,18 +38,28 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // een nieuw Competitie moodel maken
+        $teams = Team::make();
+        // model vullen met data uit request
+        $teams->naam = $request['naam'];
+        $teams->competitie_id = $request['competitie_id'];
+        // model opslaan in database
+        $teams->save();
+        // redirect naar competities pagina
+        return redirect()->route('teams.index');
+        
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Team $team)
     {
-        //
+        return view('teams.show')
+            ->with('team', $team);
     }
 
     /**

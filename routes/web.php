@@ -23,4 +23,3 @@ Route::resources([
     'wedstrijdinfo' => 'WedstrijdInfoController',
     'vereniging' => 'VerenigingController'
     ]);
-
