@@ -110,6 +110,13 @@ return [
             'icon'        => 'users',
             'label_color' => 'success',
         ],
+        [
+            'text'        => 'Kalender',
+            'url'         => 'kalender',
+            'icon'        => 'calendar',
+            'label_color' => 'success',
+        ],
+        
         // 'ACCOUNT SETTINGS',
         // [
         //     'text' => 'Profile',
