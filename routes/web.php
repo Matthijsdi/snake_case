@@ -24,3 +24,4 @@ Route::resources([
     'vereniging' => 'VerenigingController'
     ]);
 
+//Route::get('competite/{id}', 'ShowCompetitie');
