@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Competitie;
 use Illuminate\Http\Request;
-use App\Team;
-use App\Http\Controllers\Controller;
 
-class TeamController extends Controller
+class CompetitieController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +14,11 @@ class TeamController extends Controller
      */
     public function index()
     {
-        $team = Team::all();
-        return view('teams.index')
-            ->with('teams', $team);
+        $competities = Competitie::all();
+
+        return view("competities.index", [
+            'competities' => $competities,
+        ]);
     }
 
     /**
@@ -27,7 +28,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        return view('teams.create');
+        return view('competities.create');
     }
 
     /**
@@ -38,37 +39,35 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        // een nieuw Competitie moodel maken
-        $teams = Team::make();
+         // een nieuw Competitie moodel maken
+        $c = Competitie::make();
         // model vullen met data uit request
-        $teams->naam = $request['naam'];
-        $teams->competitie_id = $request['competitie_id'];
+        $c->klasse = $request['klasse'];
+        $c->klasse_afkorting = $request['klasse_afkorting'];
         // model opslaan in database
-        $teams->save();
+        $c->save();
         // redirect naar competities pagina
-        return redirect()->route('teams.index');
-        
+        return redirect()->route('competities.index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  Team  $team
+     * @param  \App\Competitie  $competitie
      * @return \Illuminate\Http\Response
      */
-    public function show(Team $team)
+    public function show(Competitie $competitie)
     {
-        return view('teams.show')
-            ->with('team', $team);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Competitie  $competitie
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Competitie $competitie)
     {
         //
     }
@@ -77,10 +76,10 @@ class TeamController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Competitie  $competitie
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Competitie $competitie)
     {
         //
     }
@@ -88,10 +87,10 @@ class TeamController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Competitie  $competitie
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Competitie $competitie)
     {
         //
     }

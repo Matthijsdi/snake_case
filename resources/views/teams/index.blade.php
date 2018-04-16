@@ -14,7 +14,7 @@
               <h3 class="box-title">Responsive Hover Table</h3>
 
               <div class="box-tools">
-              <a href="{{ route('teams.create') }}" type="button" class="btn btn-primary">Primary</a>
+              <a href="{{ route('teams.create') }}" type="button" class="btn btn-primary">+</a>
               </div>
             </div>
             <!-- /.box-header -->
