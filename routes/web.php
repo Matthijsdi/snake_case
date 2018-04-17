@@ -19,11 +19,8 @@ Auth::routes();
 
 Route::resources([
     'home' => 'HomeController',
-<<<<<<< HEAD
     'teams' => 'TeamController',
-=======
     'competities' => 'CompetitieController',
->>>>>>> feature-youp
     'wedstrijdinfo' => 'WedstrijdInfoController',
     'vereniging' => 'VerenigingController'
     ]);
