@@ -10,7 +10,7 @@ return [
     | You can optionally also specify a title prefix and/or postfix.
     |
     */
-    'title' => 'snake_case',
+    'title' => 'MBV Volley',
     'title_prefix' => '',
     'title_postfix' => '',
     /*
@@ -46,7 +46,7 @@ return [
     | removes the sidebar and places your menu in the top navbar
     |
     */
-    'layout' => null,
+    'layout' => 'top-nav',
     /*
     |--------------------------------------------------------------------------
     | Collapse Sidebar
@@ -100,7 +100,7 @@ return [
         ],
         [
             'text'        => 'Competitie',
-            'url'         => 'wedstrijdinfo',
+            'url'         => 'competities',
             'icon'        => 'signal',
             'label_color' => 'success',
         ],
@@ -108,6 +108,12 @@ return [
             'text'        => 'Vereniging',
             'url'         => 'vereniging',
             'icon'        => 'users',
+            'label_color' => 'success',
+        ],
+        [
+            'text'        => 'Wedstrijd',
+            'url'         => 'wedstrijd',
+            'icon'        => '',
             'label_color' => 'success',
         ],
         // 'ACCOUNT SETTINGS',
