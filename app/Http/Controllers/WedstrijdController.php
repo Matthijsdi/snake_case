@@ -1,11 +1,17 @@
 <?php
 
+/**
+ * Created by Visual Studio Code
+ * User: Arnoudt
+ * Date: 10-4-2018
+ * Time: 11:24
+ */
+
 namespace App\Http\Controllers;
 
-use App\Competitie;
 use Illuminate\Http\Request;
 
-class CompetitieController extends Controller
+class WedstrijdController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,11 +20,7 @@ class CompetitieController extends Controller
      */
     public function index()
     {
-        $competities = Competitie::all();
-
-        return view("competities.index", [
-            'competities' => $competities,
-        ]);
+        return view('wedstrijd.index');
     }
 
     /**
@@ -28,7 +30,7 @@ class CompetitieController extends Controller
      */
     public function create()
     {
-        return view('competities.create');
+        return view('wedstrijd.create');
     }
 
     /**
@@ -39,50 +41,39 @@ class CompetitieController extends Controller
      */
     public function store(Request $request)
     {
-        // een nieuw Competitie moodel maken
-        $c = Competitie::make();
-        // model vullen met data uit request
-        $c->klasse = $request['klasse'];
-        $c->klasse_afkorting = $request['klasse_afkorting'];
-        // model opslaan in database
-        $c->save();
-        // redirect naar competities pagina
-        return redirect()->route('competities.index');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Competitie  $competitie
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Competitie $competitie)
+    public function show($id)
     {
-//        $competitie = Competitie::find($id);
-
-        return view('competities.show')
-            ->with('competitie', $competitie);
+        return view('wedstrijd.show');
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Competitie  $competitie
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Competitie $competitie)
+    public function edit($id)
     {
-
+        return view('wedstrijd.edit');
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Competitie  $competitie
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Competitie $competitie)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -90,10 +81,10 @@ class CompetitieController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Competitie  $competitie
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Competitie $competitie)
+    public function destroy($id)
     {
         //
     }

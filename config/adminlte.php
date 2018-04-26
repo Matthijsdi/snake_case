@@ -100,7 +100,7 @@ return [
         ],
         [
             'text'        => 'Competitie',
-            'url'         => 'wedstrijdinfo',
+            'url'         => 'competities',
             'icon'        => 'signal',
             'label_color' => 'success',
         ],
@@ -111,12 +111,11 @@ return [
             'label_color' => 'success',
         ],
         [
-            'text'        => 'Kalender',
-            'url'         => 'kalender',
-            'icon'        => 'calendar',
+            'text'        => 'Wedstrijd',
+            'url'         => 'wedstrijd',
+            'icon'        => '',
             'label_color' => 'success',
         ],
-        
         // 'ACCOUNT SETTINGS',
         // [
         //     'text' => 'Profile',
