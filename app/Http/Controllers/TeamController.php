@@ -68,9 +68,10 @@ class TeamController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Team $team)
     {
-        //
+        return view('teams.edit')
+            ->with('team', $team);
     }
 
     /**
@@ -82,7 +83,21 @@ class TeamController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $data = $this->validate($request, [
+            'naam' => 'required',
+            'competitie_id' => 'required'
+        ]);
+
+        // een nieuw Competitie moodel maken
+        $teams = Team::find($id);
+        // model vullen met data uit request
+        $teams->naam = $request['naam'];
+        $teams->competitie_id = $request['competitie_id'];
+        // model opslaan in database
+        $teams->save();
+        // redirect naar competities pagina
+        return redirect()->route('teams.index')->with('success', 'Team updated');        
     }
 
     /**
