@@ -19,16 +19,18 @@
                 <tbody>
                 <tr>
                     <th style="width: 10px">#</th>
-                    <th>Task</th>
-                    <th>Progress</th>
-                    <th>Label</th>
+                    <th>Klasse Afkorting</th>
+                    <th>Klasse</th>
+                    <th>View</th>
+                    <th>Edit</th>
                 </tr>
                 @foreach($competities as $competitie)
                     <tr>
                         <td>{{ $competitie->id }}</td>
                         <td>{{ $competitie->klasse_afkorting }}</td>
                         <td>{{ $competitie->klasse }}</td>
-                        <td>hier komen de knopjes voor edit en show</td>
+                        <td><a href="{{ URL::to('competities/' . $competitie->id) }}" type="button" class="btn btn-primary pull-right">View</a></td>
+                        <td></td>
                     </tr>
                 @endforeach
                 </tbody></table>

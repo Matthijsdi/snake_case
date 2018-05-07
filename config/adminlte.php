@@ -100,7 +100,7 @@ return [
         ],
         [
             'text'        => 'Competitie',
-            'url'         => 'wedstrijdinfo',
+            'url'         => 'competities',
             'icon'        => 'signal',
             'label_color' => 'success',
         ],
@@ -108,6 +108,12 @@ return [
             'text'        => 'Vereniging',
             'url'         => 'vereniging',
             'icon'        => 'users',
+            'label_color' => 'success',
+        ],
+        [
+            'text'        => 'Wedstrijd',
+            'url'         => 'wedstrijd',
+            'icon'        => '',
             'label_color' => 'success',
         ],
         // 'ACCOUNT SETTINGS',
