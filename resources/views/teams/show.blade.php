@@ -22,4 +22,18 @@
             <p>nog te vullen</p>
             <!-- /.box-body -->
           </div>
+          <div class="box box-primary">
+    <div class="box-header with-border">
+        <h3 class="box-title">Team verwijderen</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+            <form role="form" method="POST" action="{{ route('teams.destroy', [$team->id]) }}" >
+            {{ method_field('DELETE') }}
+            {{ csrf_field() }}
+              <div class="box-footer">
+                <button type="submit" class="btn btn-danger">DELETE</button>
+              </div>
+            </form>
+          </div>
 @stop
