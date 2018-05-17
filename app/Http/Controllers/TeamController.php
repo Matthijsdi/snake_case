@@ -108,6 +108,9 @@ class TeamController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $teams = Team::find($id);
+        $teams->delete();
+        return redirect()->route('teams.index')->with('success', 'Team verwijderd'); 
     }
 }
+
