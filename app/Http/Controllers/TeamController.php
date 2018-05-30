@@ -113,3 +113,4 @@ class TeamController extends Controller
         return redirect()->route('teams.index')->with('success', 'Team verwijderd'); 
     }
 }
+

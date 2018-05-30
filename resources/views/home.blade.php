@@ -21,7 +21,11 @@
 <div class="box box-primary">
     <div class="box-header with-border">
         <h3 class="box-title">Laatste uitslagen</h3>
+<<<<<<< HEAD
         <p>hello ever</p>
+=======
+        <p>hello never</p>
+>>>>>>> feature-youp
 
         <div class="box-tools pull-right">
         <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>

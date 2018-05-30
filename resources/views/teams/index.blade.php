@@ -25,15 +25,13 @@
                   <th>Naam</th>
                   <th>Date</th>
                   <th>Status</th>
-                  <th>Reason</th>
                 </tr>
                 @foreach($teams as $team)
                 <tr>
                   <td>{{ $team->id }}</td>
-                  <td><a href="{{ route('teams.show', ['teams' => $team]) }}">{{$team->naam}}</a></td>
+                  <td><a href="{{ route('teams.show', ['teams' => $team]) }}" class="btn btn-primary btn-sm">{{$team->naam}}</a></td>
                   <td>11-7-2014</td>
                   <td><span class="label label-success">Approved</span></td>
-                  <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                 </tr>
                 @endforeach
               </tbody></table>

@@ -17,7 +17,7 @@
             <div class="box-body">
             <p>klassement: {{$team ->competitie_id}}</p>
             <hr>
-            <a href="/teams/{{$team ->id}}/edit" class="btn btn default">Edit</a>
+            <a href="/teams/{{$team ->id}}/edit" class="btn btn-primary">Edit</a>
             
             <p>nog te vullen</p>
             <!-- /.box-body -->

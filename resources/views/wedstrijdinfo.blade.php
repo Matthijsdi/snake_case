@@ -5,6 +5,9 @@
 @stop
 
 @section('content')
+<div class="box-tools">
+              <a href="{{ route('teams.index') }}" type="button" class="btn btn-primary">+</a>
+              </div>
     <div class="btn-group">
         <button type="button" class="btn btn-default">Team Selector</button>
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
