@@ -63,6 +63,43 @@
         <!-- /.item -->
         </ul>
     </div>
+
+        <div class="box-body">
+            <ul class="products-list product-list-in-box">
+                <li class="item">
+                    <div>
+                        <a href="javascript:void(0)" class="product-title float-left">Team 1</a>
+                        <p class="float-left">-</p>
+                        <a href="javascript:void(0)" class="product-title float-right">Team 2</a>
+                    </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                    <div>
+                        <a href="javascript:void(0)" class="product-title float-left">Team 3</a>
+                        <p class="float-left">-</p>
+                        <a href="javascript:void(0)" class="product-title float-right">Team 4</a>
+                    </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                    <div>
+                        <a href="javascript:void(0)" class="product-title float-left">Team 5</a>
+                        <p class="float-left">-<p>
+                            <a href="javascript:void(0)" class="product-title float-right">Team 6</a>
+                    </div>
+                </li>
+                <!-- /.item -->
+                <li class="item">
+                    <div>
+                        <a href="javascript:void(0)" class="product-title float-left">Team 7</a>
+                        <p class="float-left">-</p>
+                        <a href="javascript:void(0)" class="product-title float-right">Team 8</a>
+                    </div>
+                </li>
+                <!-- /.item -->
+            </ul>
+        </div>
     <!-- /.box-body -->
     <div class="box-footer text-center">
         <a href="javascript:void(0)" class="uppercase">Alle uitslagen</a>

@@ -20,7 +20,7 @@ Auth::routes();
 Route::resources([
     'home' => 'HomeController',
     'competities' => 'CompetitieController',
-    'wedstrijdinfo' => 'WedstrijdInfoController',
+//    'wedstrijdinfo' => 'WedstrijdInfoController',
     'vereniging' => 'VerenigingController',
     'wedstrijd' => 'WedstrijdController'
     ]);

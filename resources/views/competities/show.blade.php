@@ -7,6 +7,7 @@
 @stop
 
 @section('content')
-    {{$competitie->competitie_id}}
-
+    <div>
+    <input type="text" name="name" value="{{ $competitie->klasse }}" >
+    </div>
 @stop
