@@ -39,7 +39,7 @@ class CompetitieController extends Controller
      */
     public function store(Request $request)
     {
-        // een nieuw Competitie moodel maken
+        // een nieuw Competitie model maken
         $c = Competitie::make();
         // model vullen met data uit request
         $c->klasse = $request['klasse'];
@@ -58,7 +58,7 @@ class CompetitieController extends Controller
      */
     public function show(Competitie $competitie)
     {
-//        $competitie = Competitie::find($id);
+        // $competitie = Competitie::find($id);
 
         return view('competities.show')
             ->with('competitie', $competitie);

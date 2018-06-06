@@ -21,7 +21,7 @@ Route::resources([
     'home' => 'HomeController',
     'teams' => 'TeamController',
     'competities' => 'CompetitieController',
-    'wedstrijdinfo' => 'WedstrijdInfoController',
+//    'wedstrijdinfo' => 'WedstrijdInfoController',
     'vereniging' => 'VerenigingController',
     'wedstrijd' => 'WedstrijdController'
     ]);
