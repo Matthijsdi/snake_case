@@ -19,10 +19,9 @@ Auth::routes();
 
 Route::resources([
     'home' => 'HomeController',
+    'teams' => 'TeamController',
     'competities' => 'CompetitieController',
 //    'wedstrijdinfo' => 'WedstrijdInfoController',
     'vereniging' => 'VerenigingController',
     'wedstrijd' => 'WedstrijdController'
     ]);
-
-//Route::get('competite/{id}', 'ShowCompetitie');

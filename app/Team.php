@@ -5,7 +5,12 @@
  * Date: 15-3-2018
  * Time: 13:40
  */
-class Team
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Team extends Model
+
 {
     //
 }

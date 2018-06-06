@@ -16,9 +16,8 @@ class TeamController extends Controller
     public function index()
     {
         $team = Team::all();
-
-        return View::make('team.index')
-            ->with('team',$team);
+        return view('teams.index')
+            ->with('teams', $team);
     }
 
     /**
@@ -28,7 +27,7 @@ class TeamController extends Controller
      */
     public function create()
     {
-        //
+        return view('teams.create');
     }
 
     /**
@@ -39,18 +38,28 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // een nieuw Competitie moodel maken
+        $teams = Team::make();
+        // model vullen met data uit request
+        $teams->naam = $request['naam'];
+        $teams->competitie_id = $request['competitie_id'];
+        // model opslaan in database
+        $teams->save();
+        // redirect naar competities pagina
+        return redirect()->route('teams.index');
+        
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  Team  $team
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Team $team)
     {
-        //
+        return view('teams.show')
+            ->with('team', $team);
     }
 
     /**
@@ -59,9 +68,10 @@ class TeamController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Team $team)
     {
-        //
+        return view('teams.edit')
+            ->with('team', $team);
     }
 
     /**
@@ -73,7 +83,21 @@ class TeamController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
+        $data = $this->validate($request, [
+            'naam' => 'required',
+            'competitie_id' => 'required'
+        ]);
+
+        // een nieuw Competitie moodel maken
+        $teams = Team::find($id);
+        // model vullen met data uit request
+        $teams->naam = $request['naam'];
+        $teams->competitie_id = $request['competitie_id'];
+        // model opslaan in database
+        $teams->save();
+        // redirect naar competities pagina
+        return redirect()->route('teams.index')->with('success', 'Team updated');        
     }
 
     /**
@@ -84,6 +108,9 @@ class TeamController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $teams = Team::find($id);
+        $teams->delete();
+        return redirect()->route('teams.index')->with('success', 'Team verwijderd'); 
     }
 }
+
