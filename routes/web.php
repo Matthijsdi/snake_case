@@ -18,5 +18,6 @@ Route::resources([
     'competities' => 'CompetitieController',
     'wedstrijdinfo' => 'WedstrijdInfoController',
     'vereniging' => 'VerenigingController',
-    'wedstrijd' => 'WedstrijdController'
+    'wedstrijd' => 'WedstrijdController',
+    'sets' => 'SetsController'
     ]);

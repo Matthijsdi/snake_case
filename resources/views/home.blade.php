@@ -47,17 +47,17 @@
         <!-- /.item -->
         <li class="item">
             <div>
-            <a href="javascript:void(0)" class="product-title float-left">Team 5</a>
+            <a href="javascript:void(0)" class="product-title float-left">Team 1</a>
             <p class="float-left">-<p>
-            <a href="javascript:void(0)" class="product-title float-right">Team 6</a>
+            <a href="javascript:void(0)" class="product-title float-right">Team 2</a>
             </div>
         </li>
         <!-- /.item -->
         <li class="item">
             <div>
-            <a href="javascript:void(0)" class="product-title float-left">Team 7</a>
+            <a href="javascript:void(0)" class="product-title float-left">Team 3</a>
             <p class="float-left">-</p>
-            <a href="javascript:void(0)" class="product-title float-right">Team 8</a>
+            <a href="javascript:void(0)" class="product-title float-right">Team 4</a>
             </div>
         </li>
         <!-- /.item -->
