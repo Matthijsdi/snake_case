@@ -116,6 +116,12 @@ return [
             'icon'        => '',
             'label_color' => 'success',
         ],
+        [
+            'text'        => 'Sets',
+            'url'         => 'sets',
+            'icon'        => 'newspaper-o',
+            'label_color' => 'success',
+        ],
         // 'ACCOUNT SETTINGS',
         // [
         //     'text' => 'Profile',
