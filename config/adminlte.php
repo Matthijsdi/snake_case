@@ -1,4 +1,4 @@
-<?php
+ <?php
 return [
     /*
     |--------------------------------------------------------------------------
@@ -112,7 +112,7 @@ return [
         ],
         [
             'text'        => 'Wedstrijd',
-            'url'         => 'wedstrijd',
+            'url'         => 'wedstrijdinfo',
             'icon'        => '',
             'label_color' => 'success',
         ],
