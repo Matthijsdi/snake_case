@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="box-tools">
-              <a href="{{ route('teams.index') }}" type="button" class="btn btn-primary">+</a>
+              <a href="{{ route('teams.index') }}" type="button" title="Teamtabel" class="btn btn-primary">Team beheer</a>
               </div>
     <div class="btn-group">
         <button type="button" class="btn btn-default">Team Selector</button>

@@ -7,8 +7,8 @@
 @stop
 
 @section('content')
-    
-    
+
+
     <div class="box">
             <div class="box-header">
               <h3 class="box-title">Detils over {{ $team->naam }}</h3>
@@ -18,7 +18,7 @@
             <p>klassement: {{$team ->competitie_id}}</p>
             <hr>
             <a href="/teams/{{$team ->id}}/edit" class="btn btn-primary">Edit</a>
-            
+            <!-- link naar de team aanpassen pagina van desbetreffende team -->
             <p>nog te vullen</p>
             <!-- /.box-body -->
           </div>
@@ -33,6 +33,7 @@
             {{ csrf_field() }}
               <div class="box-footer">
                 <button type="submit" class="btn btn-danger">DELETE</button>
+                <!-- delete functie voor dit team -->
               </div>
             </form>
           </div>

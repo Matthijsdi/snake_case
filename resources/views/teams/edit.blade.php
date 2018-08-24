@@ -17,7 +17,6 @@
             <form role="form" method="POST" action="{{ route('teams.update', [$team->id]) }}" >
             {{ method_field('PUT') }}
             {{ csrf_field() }}
-
                <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputnaaml1">teamnaam</label>

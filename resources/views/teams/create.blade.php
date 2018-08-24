@@ -18,24 +18,18 @@
               <div class="box-body">
                 <div class="form-group">
                   <label for="exampleInputnaaml1">teamnaam</label>
-                  <input type="text" class="form-control" name="naam" placeholder=" voeg een teamnaam toe">
+                  <p style="color: red"><input type="text" class="form-control" name="naam" placeholder=" voeg een teamnaam toe">*</p>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputcompetitieword1">competitie</label>
-                  <input type="text" class="form-control" name="competitie_id" placeholder="voeg competitie nummer toe">
+                  <p style="color: red"><input type="text" class="form-control" name="competitie_id" placeholder="voeg competitie nummer toe">*</p>
                 </div>
-              <!--
-                <div class="form-group">
-                  <label for="exampleInputBeschrijving1">beschrijving</label>
-                  <input type="text" class="form-control" name="beschrijving" placeholder="voeg beschrijving toe">
-                </div>
-                -->
-              </div>
+               </div>
               <!-- /.box-body -->
-
               <div class="box-footer">
                 <button type="submit" class="btn btn-primary">Submit</button>
+                <p style="color: red">velden gemarkeert met * moeten worden ingevuld voordat het team kan worden aangemaakt</p>
               </div>
             </form>
-          </div>    
+          </div>
 @stop

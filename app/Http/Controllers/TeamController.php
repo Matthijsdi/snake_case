@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Team;
 use App\Http\Controllers\Controller;
+use App\Team;
+use Illuminate\Http\Request;
 
 class TeamController extends Controller
 {
@@ -47,7 +47,7 @@ class TeamController extends Controller
         $teams->save();
         // redirect naar competities pagina
         return redirect()->route('teams.index');
-        
+
     }
 
     /**
@@ -83,10 +83,10 @@ class TeamController extends Controller
      */
     public function update(Request $request, $id)
     {
-        
+
         $data = $this->validate($request, [
             'naam' => 'required',
-            'competitie_id' => 'required'
+            'competitie_id' => 'required',
         ]);
 
         // een nieuw Competitie moodel maken
@@ -97,7 +97,7 @@ class TeamController extends Controller
         // model opslaan in database
         $teams->save();
         // redirect naar competities pagina
-        return redirect()->route('teams.index')->with('success', 'Team updated');        
+        return redirect()->route('teams.index')->with('success', 'Team updated');
     }
 
     /**
@@ -110,7 +110,6 @@ class TeamController extends Controller
     {
         $teams = Team::find($id);
         $teams->delete();
-        return redirect()->route('teams.index')->with('success', 'Team verwijderd'); 
+        return redirect()->route('teams.index')->with('success', 'Team verwijderd');
     }
 }
-

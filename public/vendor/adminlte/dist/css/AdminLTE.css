@@ -164,6 +164,9 @@ h6,
 a {
   color: #3c8dbc;
 }
+a:visited {
+  color: purple;
+}
 a:hover,
 a:active,
 a:focus {
